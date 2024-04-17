@@ -54,7 +54,6 @@ public class TelaPGR extends JFrame {
 	 * Create the frame.
 	 */
 	public TelaPGR() {
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 544, 433);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
@@ -129,7 +128,7 @@ public class TelaPGR extends JFrame {
 				}	
 			}
 		});
-		btnPgrSalvar.setFont(new Font("Tahoma", Font.PLAIN, 9));
+		btnPgrSalvar.setFont(new Font("Dialog", Font.PLAIN, 11));
 		btnPgrSalvar.setBounds(410, 90, 89, 23);
 		contentPane.add(btnPgrSalvar);
 		
@@ -180,7 +179,7 @@ public class TelaPGR extends JFrame {
 				
 			}
 		});
-		btnListarPgr.setFont(new Font("Tahoma", Font.PLAIN, 9));
+		btnListarPgr.setFont(new Font("Dialog", Font.PLAIN, 11));
 		btnListarPgr.setBounds(429, 219, 89, 23);
 		contentPane.add(btnListarPgr);
 		
@@ -261,11 +260,12 @@ public class TelaPGR extends JFrame {
 				}
 			}
 		});
-		btnAtualizarPgr.setFont(new Font("Tahoma", Font.PLAIN, 11));
-		btnAtualizarPgr.setBounds(410, 121, 93, 23);
+		btnAtualizarPgr.setFont(new Font("Dialog", Font.PLAIN, 11));
+		btnAtualizarPgr.setBounds(410, 121, 89, 23);
 		contentPane.add(btnAtualizarPgr);
 		
 		JButton btnExcluirPgr = new JButton("Excluir");
+		btnExcluirPgr.setFont(new Font("Dialog", Font.PLAIN, 11));
 		btnExcluirPgr.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				
@@ -338,12 +338,12 @@ public class TelaPGR extends JFrame {
 			}
 		});
 		btnAbrirPgrId.setFont(new Font("Tahoma", Font.PLAIN, 11));
-		btnAbrirPgrId.setBounds(10, 77, 72, 23);
+		btnAbrirPgrId.setBounds(10, 77, 46, 23);
 		contentPane.add(btnAbrirPgrId);
 		
 		txtPgrId = new JTextField();
 		txtPgrId.setColumns(10);
-		txtPgrId.setBounds(84, 79, 46, 21);
+		txtPgrId.setBounds(54, 79, 46, 21);
 		contentPane.add(txtPgrId);
 	}
 }

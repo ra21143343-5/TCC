@@ -56,7 +56,6 @@ public class TelaUsuario extends JFrame {
 	 * Create the frame.
 	 */
 	public TelaUsuario() {
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 450, 426);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
@@ -89,6 +88,7 @@ public class TelaUsuario extends JFrame {
 		contentPane.add(txtCadastroSenha);
 		
 		JButton btnNewButton = new JButton("Cadastrar");
+		btnNewButton.setFont(new Font("Tahoma", Font.PLAIN, 11));
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 								
@@ -130,6 +130,7 @@ public class TelaUsuario extends JFrame {
 		contentPane.add(btnNewButton);
 		
 		JButton btnListarUsuario = new JButton("Listar");
+		btnListarUsuario.setFont(new Font("Tahoma", Font.PLAIN, 11));
 		btnListarUsuario.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 										
@@ -231,6 +232,7 @@ public class TelaUsuario extends JFrame {
 		contentPane.add(btnAtualizarcarPcmso);
 		
 		JButton btnExcluiPcmso = new JButton("Excluir");
+		btnExcluiPcmso.setFont(new Font("Tahoma", Font.PLAIN, 11));
 		btnExcluiPcmso.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				
@@ -307,7 +309,7 @@ public class TelaUsuario extends JFrame {
 		
 		txtUsuarioId = new JTextField();
 		txtUsuarioId.setColumns(10);
-		txtUsuarioId.setBounds(82, 79, 46, 22);
+		txtUsuarioId.setBounds(80, 79, 46, 22);
 		contentPane.add(txtUsuarioId);
 	}
 }

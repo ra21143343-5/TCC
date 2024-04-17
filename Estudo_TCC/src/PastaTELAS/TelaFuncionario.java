@@ -58,7 +58,6 @@ public class TelaFuncionario extends JFrame {
 	 * Create the frame.
 	 */
 	public TelaFuncionario() {
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 563, 428);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
@@ -121,7 +120,7 @@ public class TelaFuncionario extends JFrame {
 			}
 			});
 		
-		btnFuncionarioSalvar.setFont(new Font("Tahoma", Font.PLAIN, 12));
+		btnFuncionarioSalvar.setFont(new Font("Tahoma", Font.PLAIN, 11));
 		btnFuncionarioSalvar.setBounds(448, 89, 89, 23);
 		contentPane.add(btnFuncionarioSalvar);
 		
@@ -162,6 +161,7 @@ public class TelaFuncionario extends JFrame {
 		scrollPane.setViewportView(tbListarFuncionario);
 		
 		JButton btnListarFuncionario = new JButton("Listar");
+		btnListarFuncionario.setFont(new Font("Tahoma", Font.PLAIN, 11));
 		btnListarFuncionario.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				
@@ -197,7 +197,7 @@ public class TelaFuncionario extends JFrame {
 		contentPane.add(btnListarFuncionario);
 		
 		txtAbrirFuncionario = new JTextField();
-		txtAbrirFuncionario.setBounds(74, 57, 46, 20);
+		txtAbrirFuncionario.setBounds(72, 57, 46, 20);
 		contentPane.add(txtAbrirFuncionario);
 		txtAbrirFuncionario.setColumns(10);
 		
@@ -244,6 +244,7 @@ public class TelaFuncionario extends JFrame {
 		contentPane.add(btnAbrirFuncionario);
 		
 		JButton btnAtualizarFuncionario = new JButton("Atualizar");
+		btnAtualizarFuncionario.setFont(new Font("Tahoma", Font.PLAIN, 11));
 		btnAtualizarFuncionario.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 
@@ -291,6 +292,7 @@ public class TelaFuncionario extends JFrame {
 		contentPane.add(btnAtualizarFuncionario);
 		
 		JButton btnExcluirFuncionario = new JButton("Excluir");
+		btnExcluirFuncionario.setFont(new Font("Tahoma", Font.PLAIN, 11));
 		btnExcluirFuncionario.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 					

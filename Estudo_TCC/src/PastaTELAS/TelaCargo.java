@@ -57,7 +57,6 @@ public class TelaCargo extends JFrame {
 	 * Create the frame.
 	 */
 	public TelaCargo() {
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 541, 434);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
@@ -250,7 +249,7 @@ public class TelaCargo extends JFrame {
 		
 		txtBuscaId = new JTextField();
 		txtBuscaId.setColumns(10);
-		txtBuscaId.setBounds(69, 65, 46, 21);
+		txtBuscaId.setBounds(67, 64, 46, 21);
 		contentPane.add(txtBuscaId);
 		
 		JButton btnBuscaId = new JButton("id");
@@ -301,6 +300,7 @@ public class TelaCargo extends JFrame {
 		contentPane.add(btnBuscaId);
 		
 		JButton btnExcluiCargo = new JButton("Excluir");
+		btnExcluiCargo.setFont(new Font("Tahoma", Font.PLAIN, 11));
 		btnExcluiCargo.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				

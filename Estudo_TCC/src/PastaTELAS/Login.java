@@ -84,7 +84,7 @@ public class Login extends JFrame {
 				
 				try {
 
-		            //Declarando as variaveis de acessa DTO    
+		            //Declarando as variáveis de acesso DTO    
 		            String nome_usuario;
 		            String senha_usuario;
 
@@ -102,14 +102,15 @@ public class Login extends JFrame {
 		            ResultSet rsusuarioDAO = objUsuarioDAO.autenticacaoUsuario(objusuariodto);
 		            
 		            if (rsusuarioDAO.next()) {
-		                //Chamar tela que eu quero abrir
+		                //Chamando tela que eu quero abrir
 		                TelaMenu objTelaMenu = new TelaMenu();
+		                objTelaMenu.setExtendedState(MAXIMIZED_BOTH);
 		                objTelaMenu.setVisible(true);
 		                
 		                dispose();
 		                
 		            }else{
-		                //Enviar menssagem que usuario e senha estão incorretos
+		                //Enviar menspAULOagem que usuario e senha estão incorretos
 		                JOptionPane.showMessageDialog(null, "Usuário ou Senha Inválida");
 		            }
 		            

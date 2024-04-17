@@ -54,7 +54,6 @@ public class TelaEmpresa extends JFrame {
 	 * Create the frame.
 	 */
 	public TelaEmpresa() {
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 567, 429);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
@@ -87,6 +86,7 @@ public class TelaEmpresa extends JFrame {
 		contentPane.add(txtCnpjEmpresa);
 		
 		JButton btnCadastrarEmpresa = new JButton("Cadastrar");
+		btnCadastrarEmpresa.setFont(new Font("Tahoma", Font.PLAIN, 11));
 		btnCadastrarEmpresa.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				
@@ -161,7 +161,7 @@ public class TelaEmpresa extends JFrame {
 			}	
 			}
 		});
-		btnAbrirEmpresa.setBounds(31, 75, 64, 23);
+		btnAbrirEmpresa.setBounds(31, 75, 51, 23);
 		contentPane.add(btnAbrirEmpresa);
 		
 		JScrollPane scrollPane = new JScrollPane();
@@ -242,6 +242,7 @@ public class TelaEmpresa extends JFrame {
 		contentPane.add(btnAtualizarEmpresa);
 		
 		JButton btnExcluirEmpresa = new JButton("Excluir");
+		btnExcluirEmpresa.setFont(new Font("Tahoma", Font.PLAIN, 11));
 		btnExcluirEmpresa.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				
@@ -277,7 +278,7 @@ public class TelaEmpresa extends JFrame {
 		
 		txtAbrirEmpresa = new JTextField();
 		txtAbrirEmpresa.setColumns(10);
-		txtAbrirEmpresa.setBounds(97, 76, 46, 21);
+		txtAbrirEmpresa.setBounds(78, 76, 42, 21);
 		contentPane.add(txtAbrirEmpresa);
 		
 		JButton btnListarCnpj = new JButton("Listar");

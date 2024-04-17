@@ -54,7 +54,6 @@ public class TelaPCMSO extends JFrame {
 	 * Create the frame.
 	 */
 	public TelaPCMSO() {
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 572, 399);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
@@ -136,11 +135,12 @@ public class TelaPCMSO extends JFrame {
 		
 			}
 		});
-		btnPcmsoSalvar.setFont(new Font("Tahoma", Font.PLAIN, 9));
+		btnPcmsoSalvar.setFont(new Font("Tahoma", Font.PLAIN, 11));
 		btnPcmsoSalvar.setBounds(451, 76, 89, 23);
 		contentPane.add(btnPcmsoSalvar);
 		
 		JButton btnListarPcmso = new JButton("Listar");
+		btnListarPcmso.setFont(new Font("Tahoma", Font.PLAIN, 11));
 		btnListarPcmso.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				
@@ -259,6 +259,7 @@ public class TelaPCMSO extends JFrame {
 		contentPane.add(btnAtualizarcarPcmso);
 		
 		JButton btnExcluiPcmso = new JButton("Excluir");
+		btnExcluiPcmso.setFont(new Font("Tahoma", Font.PLAIN, 11));
 		btnExcluiPcmso.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				
@@ -332,12 +333,12 @@ public class TelaPCMSO extends JFrame {
 			}
 		});
 		btnPcmsoId.setFont(new Font("Tahoma", Font.PLAIN, 11));
-		btnPcmsoId.setBounds(21, 89, 77, 23);
+		btnPcmsoId.setBounds(21, 89, 46, 23);
 		contentPane.add(btnPcmsoId);
 		
 		txtPcmsoId = new JTextField();
 		txtPcmsoId.setColumns(10);
-		txtPcmsoId.setBounds(95, 90, 46, 21);
+		txtPcmsoId.setBounds(58, 90, 46, 21);
 		contentPane.add(txtPcmsoId);
 	}
 
